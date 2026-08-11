@@ -1,0 +1,138 @@
+{
+  "wheat": {
+    "id": "wheat",
+    "name": "Buğday",
+    "icon": "🌾",
+    "description": "Kuru ve sulu tarım koşullarına göre taban ve üst gübreleme yönetimi.",
+    "schedule": [
+      {
+        "month": "Ekim",
+        "period": "Ekim Öncesi / Taban",
+        "fertilizer": "DAP (18-46-0) veya 20-20-0",
+        "dosage": "15-25 kg/da",
+        "intensity": "Orta",
+        "notes": "Tohum yatağına, kök bölgesine uygulanır."
+      },
+      {
+        "month": "Kasım",
+        "period": "Çimlenme & Çıkış",
+        "fertilizer": "-",
+        "dosage": "-",
+        "intensity": "Hafif",
+        "notes": "Gelişim takibi yapılır."
+      },
+      {
+        "month": "Şubat",
+        "period": "Kardeşlenme Başı",
+        "fertilizer": "Amonyum Sülfat (%21 N)",
+        "dosage": "15-20 kg/da",
+        "intensity": "Yoğun",
+        "notes": "Erken ilkbahar azotu, kardeşlenmeyi teşvik eder."
+      },
+      {
+        "month": "Mart",
+        "period": "Kardeşlenme Sonu / Sapa Kalkma",
+        "fertilizer": "Üre (%46 N)",
+        "dosage": "10-15 kg/da",
+        "intensity": "Yoğun",
+        "notes": "Verim potansiyelini artırır."
+      },
+      {
+        "month": "Nisan",
+        "period": "Sapa Kalkma / Başak Çıkarma",
+        "fertilizer": "Amonyum Nitrat (%26 N) / Çinko",
+        "dosage": "10-15 kg/da",
+        "intensity": "Yoğun",
+        "notes": "Protein oranı ve dane ağırlığı için kritik dönem."
+      },
+      {
+        "month": "Mayıs",
+        "period": "Çiçeklenme & Dane Doldurma",
+        "fertilizer": "Yapraktan Potasyum / Mikro Element",
+        "dosage": "200-300 cc/da",
+        "intensity": "Orta",
+        "notes": "Dane dolgunluğunu destekler."
+      }
+    ]
+  },
+  "maize": {
+    "id": "maize",
+    "name": "Mısır",
+    "icon": "🌽",
+    "description": "Danelik ve silajlık mısır yetiştiriciliğinde yüksek azot ve çinko ihtiyacına uygun takvim.",
+    "schedule": [
+      {
+        "month": "Nisan",
+        "period": "Ekim Öncesi / Taban",
+        "fertilizer": "15-15-15 + Zinc veya DAP",
+        "dosage": "30-40 kg/da",
+        "intensity": "Yoğun",
+        "notes": "Kök bölgesine bant usulü verilir."
+      },
+      {
+        "month": "Mayıs",
+        "period": "4-6 Yaprak (Çıkış Sonrası)",
+        "fertilizer": "Üre (%46 N) + Çinko Yaprak Gübresi",
+        "dosage": "20-25 kg/da",
+        "intensity": "Yoğun",
+        "notes": "İlk üst gübreleme, çinko noksanlığına dikkat."
+      },
+      {
+        "month": "Haziran",
+        "period": "Boğum Arası Uzama (8-10 Yaprak)",
+        "fertilizer": "Amonyum Nitrat (%26 N)",
+        "dosage": "25-30 kg/da",
+        "intensity": "Yoğun",
+        "notes": "Ara çapa veya sulama ile birlikte verilir."
+      },
+      {
+        "month": "Temmuz",
+        "period": "Koçan Oluşumu / Püskül Çıkarma",
+        "fertilizer": "Potasyum Nitrat / Sıvı Azot Yapraktan",
+        "dosage": "15-20 kg/da",
+        "intensity": "Yoğun",
+        "notes": "Tepe püskülü öncesi son ana besleme."
+      }
+    ]
+  },
+  "sunflower": {
+    "id": "sunflower",
+    "name": "Ayçiçeği",
+    "icon": "🌻",
+    "description": "Yağlık ve çerezlik ayçiçeğinde bor, kükürt ve dengeli azot-fosfor besleme programı.",
+    "schedule": [
+      {
+        "month": "Mart",
+        "period": "Toprak Hazırlığı / Taban",
+        "fertilizer": "20-20-0 + Kükürt veya 15-15-15",
+        "dosage": "25-35 kg/da",
+        "intensity": "Yoğun",
+        "notes": "Ekim öncesi toprağa karıştırılır."
+      },
+      {
+        "month": "Mayıs",
+        "period": "6-8 Yaprak Dönemi",
+        "fertilizer": "Üre (%46 N) veya Amonyum Sülfat",
+        "dosage": "15-20 kg/da",
+        "intensity": "Yoğun",
+        "notes": "Çapa ile birlikte kök boğazına verilir."
+      },
+      {
+        "month": "Haziran",
+        "period": "Tabla Oluşumu / Tomurcuk",
+        "fertilizer": "Bor İçerikli Yaprak Gübresi + Kalsiyum",
+        "dosage": "200-250 cc/da",
+        "intensity": "Yoğun",
+        "notes": "Tabla içi boş dane oluşumunu engeller (Bor şart)."
+      },
+      {
+        "month": "Temmuz",
+        "period": "Çiçeklenme & Dane Tutumu",
+        "fertilizer": "Potasyum Sülfat Yapraktan",
+        "dosage": "250 cc/da",
+        "intensity": "Orta",
+        "notes": "Yağ oranını ve dane kalitesini artırır."
+      }
+    ]
+  }
+}
