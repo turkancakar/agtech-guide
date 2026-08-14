@@ -11,15 +11,15 @@ export default function Header() {
         🌱 AgTech Dijital Tarım Platformu &nbsp;|&nbsp; Toprak Analizine Göre Akıllı Gübreleme Rehberi
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
         {/* Sadece PNG Logo (Yazı kaldırıldı) */}
         <a href="#" className="flex items-center">
           <Image
             src="/logo.png"
             alt="AgTech Logo"
-            width={160}
-            height={48}
-            className="h-10 w-auto" // <-- w-auto eklendi
+            width={250}
+            height={130}
+            className="h-30 w-26 object-contain"
             priority
           />
         </a>
@@ -43,7 +43,7 @@ export default function Header() {
         {/* Sağ Buton */}
         <a
           href="#takvim"
-          className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition shadow-xs"
+          className="bg-emerald-700 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition shadow-xs"
         >
           Takvimi İncele
         </a>
