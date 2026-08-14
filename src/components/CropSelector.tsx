@@ -1,49 +1,51 @@
 'use client';
 
 import React from 'react';
+import rawCropData from '@/data/cropSchedules.json';
 import { CropDatabase } from '@/types/calendar';
-import { Wheat, Sprout, Sun } from 'lucide-react'; // Corn yerine Sprout kullandık
+import { Wheat, Sprout, Sun } from 'lucide-react';
 
 interface CropSelectorProps {
-  crops: CropDatabase;
   selectedCropKey: string;
-  onSelectCrop: (key: string) => void;
+  onSelectCropKey: (key: string) => void;
 }
 
-export default function CropSelector({ crops, selectedCropKey, onSelectCrop }: CropSelectorProps) {
-  const renderCropIcon = (key: string, isActive: boolean) => {
-    const iconClass = `w-5 h-5 stroke-[1.75] ${isActive ? 'text-white' : 'text-emerald-700'}`;
+export default function CropSelector({
+  selectedCropKey,
+  onSelectCropKey,
+}: CropSelectorProps) {
+  const crops = rawCropData as unknown as CropDatabase;
 
-    switch (key) {
-      case 'wheat':
-        return <Wheat className={iconClass} />;
-      case 'maize':
-      case 'corn':
-        return <Sprout className={iconClass} />; // Mısır filizi ikonu
-      case 'sunflower':
-        return <Sun className={iconClass} />;
+  const renderIcon = (id: string) => {
+    switch (id) {
+      case 'bugday':
+        return <Wheat className="w-4 h-4" />;
+      case 'misir':
+        return <Sprout className="w-4 h-4" />;
+      case 'aycicegi':
+        return <Sun className="w-4 h-4" />;
       default:
-        return <Wheat className={iconClass} />;
+        return <Sprout className="w-4 h-4" />;
     }
   };
 
   return (
-    <div className="flex justify-center space-x-3 mb-8">
-      {Object.keys(crops).map((key) => {
+    <div className="flex flex-wrap justify-center items-center gap-3 mb-8">
+      {Object.keys(crops || {}).map((key) => {
         const crop = crops[key];
         const isActive = selectedCropKey === key;
 
         return (
           <button
             key={key}
-            onClick={() => onSelectCrop(key)}
-            className={`flex items-center gap-2.5 px-6 py-3 rounded-2xl font-semibold text-sm sm:text-base transition-all shadow-xs border ${
+            onClick={() => onSelectCropKey(key)}
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-200 border ${
               isActive
-                ? 'bg-emerald-600 text-white border-emerald-600 shadow-emerald-200'
-                : 'bg-white text-slate-700 hover:bg-emerald-50/60 border-slate-200/80'
+                ? 'bg-emerald-600 text-white border-emerald-600 shadow-md shadow-emerald-600/20'
+                : 'bg-white text-slate-700 border-slate-200 hover:border-emerald-300 hover:bg-emerald-50/40'
             }`}
           >
-            {renderCropIcon(key, isActive)}
+            {renderIcon(key)}
             <span>{crop.name}</span>
           </button>
         );
