@@ -19,7 +19,7 @@ export default function Header() {
             alt="AgTech Logo"
             width={160}
             height={48}
-            className="h-12 w-auto object-contain"
+            className="h-10 w-auto" // <-- w-auto eklendi
             priority
           />
         </a>
