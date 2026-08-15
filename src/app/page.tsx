@@ -18,20 +18,20 @@ export default function Home() {
       <Header />
       
       <main className="flex-grow space-y-12">
-        {/* 1. Slider Artık Sayfanın En Başında */}
+        {/* 1. Slider Sayfanın En Başında */}
         <div className="pt-4">
           <ImageSlider />
         </div>
 
         {/* 2. Saha Önerileri */}
-        <div id="oneriler">
+        <div id="oneriler" className="scroll-mt-32">
           <Recommendations />
         </div>
 
         {/* 3. Gübreleme Takvimi & Tablo */}
-        <section id="takvim" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <section id="takvim" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 scroll-mt-32">
           <div className="text-center max-w-3xl mx-auto mb-8 space-y-2">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-4xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-10">
               Gübreleme Takvimi
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -50,7 +50,7 @@ export default function Home() {
         </section>
 
         {/* 4. Blog Makaleleri */}
-        <div id="blog">
+        <div id="blog" className="scroll-mt-32">
           <BlogSection />
         </div>
 

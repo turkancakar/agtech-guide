@@ -11,7 +11,7 @@ export default function BlogSection() {
     <section id="blog" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* Başlık Alanı */}
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
+        <h2 className="text-4xl font-bold text-slate-900 mb-3">
           Blog & Makaleler
         </h2>
         <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
