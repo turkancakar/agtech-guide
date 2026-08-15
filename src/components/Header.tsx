@@ -18,7 +18,7 @@ export default function Header() {
             src="/logo.png"
             alt="AgTech Logo"
             width={250}
-            height={130}
+            height={150}
             className="h-30 w-26 object-contain"
             priority
           />
@@ -29,12 +29,13 @@ export default function Header() {
           <a href="#" className="hover:text-emerald-600 transition-colors text-slate-900">
             Ana Sayfa
           </a>
-          <a href="#takvim" className="hover:text-emerald-600 transition-colors">
-            Gübreleme Takvimi
-          </a>
           <a href="#oneriler" className="hover:text-emerald-600 transition-colors">
             Saha Önerileri
           </a>
+          <a href="#takvim" className="hover:text-emerald-600 transition-colors">
+            Gübreleme Takvimi
+          </a>
+          
           <a href="#blog" className="hover:text-emerald-600 transition-colors">
             Blog
           </a>

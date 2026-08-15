@@ -29,7 +29,7 @@ export default function Recommendations() {
 
   return (
     <section id="oneriler" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <h2 className="text-2xl font-bold text-slate-900 text-center mb-10">
+      <h2 className="text-4xl font-bold text-slate-900 text-center mb-10 mt-6">
         Saha Önerileri
       </h2>
 
